@@ -1,4 +1,4 @@
 KotlinDemo
 ---
-![kotlin介绍导图](https://github.com/guodongxiaren/ImageCache/raw/master/Logo/foryou.gif)  
+![kotlin介绍导图](https://github.com/yaosongqwe/KotlinDemo/blob/master/kotlin.png)  
 ---
