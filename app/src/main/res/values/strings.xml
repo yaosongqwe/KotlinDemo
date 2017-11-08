@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyKotLin</string>
+    <!-- load tip -->
+    <string name="load_fail">Load failed, Please slide up to try again</string>
+    <string name="load_no_more">There is nothing more</string>
+
+</resources>
