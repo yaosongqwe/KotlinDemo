@@ -11,7 +11,6 @@ import com.ysdemo.mykotlin.ui.baseModel.ArrayItem
 import com.ysdemo.mykotlin.ui.widget.NoScrollGridManager
 import kotlinx.android.synthetic.main.activity_gank.*
 
-
 /**
  * Demo for gank
  * Created by Song on 2017/10/10.

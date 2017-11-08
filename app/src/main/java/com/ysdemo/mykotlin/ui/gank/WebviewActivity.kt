@@ -1,19 +1,4 @@
 package com.ysdemo.mykotlin.ui.gank
-/*
- * Copyright (C) 2016 Johnny Shieh Open Source Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -32,12 +17,6 @@ import org.jetbrains.anko.browse
 import org.jetbrains.anko.share
 import org.jetbrains.anko.startActivity
 
-/**
- * description
- *
- * @author Johnny Shieh (JohnnyShieh17@gmail.com)
- * @version 1.0
- */
 class WebviewActivity : AppCompatActivity(),
         SwipeRefreshLayout.OnRefreshListener {
 
@@ -106,7 +85,7 @@ class WebviewActivity : AppCompatActivity(),
         webview.setWebChromeClient(object : WebChromeClient() {
             override fun onProgressChanged(view: WebView?, newProgress: Int) {
                 super.onProgressChanged(view, newProgress)
-                if (newProgress >= 80)  refresh_layout.isRefreshing = false
+                if (newProgress >= 80) refresh_layout.isRefreshing = false
             }
         })
     }
@@ -163,7 +142,7 @@ class WebviewActivity : AppCompatActivity(),
         // After Android 5.1, there has a problem in Webview:
         // if onDetach is called after destroy, AwComponentCallbacks object will be leaked.
         val tmpWebView = webview
-        if(null != webview.parent) {
+        if (null != webview.parent) {
             (webview.parent as ViewGroup).removeView(webview)
         }
         tmpWebView.destroy()

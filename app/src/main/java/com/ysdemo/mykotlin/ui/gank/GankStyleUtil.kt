@@ -21,15 +21,4 @@ object GankStyleUtil {
         return builder
     }
 
-    fun RecyclerView.Adapter<RecyclerView.ViewHolder>.getGankTitleStr(desc: String, who: String?, type: String): CharSequence {
-        if (who.isNullOrEmpty()) return desc
-        val builder = SpannableStringBuilder(desc)
-        val spannableWho = SpannableString(" ($who)")
-        val spannableType = SpannableString(" ($type)")
-        spannableWho.setSpan(TextAppearanceSpan(MyKotlinApp.instance, R.style.SummaryTextAppearance), 0, spannableWho.length, 0)
-        spannableType.setSpan(TextAppearanceSpan(MyKotlinApp.instance, R.style.SummaryTextAppearance), 0, spannableType.length, 0)
-        builder.append(spannableWho)
-        builder.append(spannableType)
-        return builder
-    }
 }

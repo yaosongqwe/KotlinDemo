@@ -93,8 +93,6 @@ class DemoActivity : AppCompatActivity() {
                 return 1
             }
 
-            override fun onBindViewHolderWithOffset(holder: DemoViewHolder, position: Int, offsetTotal: Int) = Unit
-
             override fun onBindViewHolder(holder: DemoViewHolder, position: Int) {
                 if (holder.itemView is Banner) {
                     val banner = holder.itemView
