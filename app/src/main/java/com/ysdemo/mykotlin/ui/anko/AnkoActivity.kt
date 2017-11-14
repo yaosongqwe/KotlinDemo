@@ -4,10 +4,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.Toolbar
 import android.view.ViewGroup
-import org.jetbrains.anko.UI
-import org.jetbrains.anko.doAsync
-import org.jetbrains.anko.runOnUiThread
-import org.jetbrains.anko.uiThread
+import org.jetbrains.anko.*
 
 /**
  * Demo for anko
@@ -22,6 +19,6 @@ class AnkoActivity :AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(layout.bind(this))
+        layout.setContentView(this)
     }
 }

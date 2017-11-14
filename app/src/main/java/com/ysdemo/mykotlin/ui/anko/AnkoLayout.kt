@@ -2,7 +2,6 @@ package com.ysdemo.mykotlin.ui.anko
 
 import android.view.View
 import android.widget.Button
-import android.widget.ImageView
 import android.widget.LinearLayout
 import com.ysdemo.mykotlin.R
 import com.ysdemo.mykotlin.ui.base.ViewBinder
@@ -25,8 +24,8 @@ class AnkoLayout : ViewBinder<AnkoActivity> {
         }
     }
 
-    override fun bind(ankoActivity: AnkoActivity): View =
-            ankoActivity.UI {
+    override fun createView(ui: AnkoContext<AnkoActivity>): View =
+            ui.apply {
                 linearLayout {
                     orientation = LinearLayout.VERTICAL
                     padding = dip(30)
@@ -42,12 +41,12 @@ class AnkoLayout : ViewBinder<AnkoActivity> {
                             verticalLayout {
                                 button("toast") {
                                     onClick {
-                                        ankoActivity.toast("toast by Anko")
+                                        ui.toast("toast by Anko")
                                     }
                                 }
                                 button("intent") {
                                     onClick {
-                                        ankoActivity.startActivity<AnkoActivity>()
+                                        ui.startActivity<AnkoActivity>()
                                     }
                                 }
                                 button("call") {
