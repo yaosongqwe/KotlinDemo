@@ -32,7 +32,7 @@ open class SubAdapter @JvmOverloads constructor(private val mContext: Context, p
 
 
     override fun onBindViewHolderWithOffset(holder: DemoViewHolder?, position: Int, offsetTotal: Int) {
-        (holder!!.itemView.findViewById(R.id.title) as TextView).text = Integer.toString(offsetTotal)
+        (holder?.itemView?.findViewById(R.id.title) as? TextView)?.text = Integer.toString(offsetTotal)
     }
 
     override fun getItemCount(): Int {

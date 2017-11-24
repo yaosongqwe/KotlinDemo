@@ -2,8 +2,8 @@ package com.ysdemo.mykotlin.ui.gank
 
 import com.ysdemo.mykotlin.ui.gank.model.GankItem
 import com.ysdemo.mykotlin.ui.gank.model.GankNormalItem
-import io.github.tonnyl.mango.mvp.BasePresenter
-import io.github.tonnyl.mango.mvp.BaseView
+import com.ysdemo.mykotlin.mvp.BasePresenter
+import com.ysdemo.mykotlin.mvp.BaseView
 
 /**
  * Demo for MVP

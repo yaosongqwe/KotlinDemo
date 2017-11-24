@@ -1,4 +1,4 @@
-package io.github.tonnyl.mango.mvp
+package com.ysdemo.mykotlin.mvp
 
 /**
  * Base view in MVP architecture.
